@@ -21,22 +21,20 @@
         brug vores lommeregner så du ikke overdoser<br>
         <br>
         
-        <label><for="">num1</label><input type="textbox" name="input1"><br>
-        <label><for="">num1</label><input type="textbox" name="input2"<br>
-        <label><for="">num1</label><input type="textbox" name="output"<br>
-        <button onClick="add()">test</button>
-        
-        <script >
-        function add(){
-               function add() {
-                    var f = parseString(document.getElementsByName("input1")[0].value);
-                    var s =parseString(document.getElementsByName("input2")[0].value);
-                    var result = f+s;
-                    document.getElementsByName("output")[0].value= result;
+	<label><for="">num1</label><input type="textbox" name="input1"><br>
+
+	<label><for="">num2</label><input type="textbox" name="input2"> <br>
+
+	<label for="displayValue">output: </label><input type="textbox" name="display"><br>
+        <button onClick="add()">plus</button><br>
+<script>
+   function add() {
+      var f = parseString(document.getElementsByName("input1")[0].value);
+      var s =parseString(document.getElementsByName("input2")[0].value);
+      var result = f+s;
+      document.getElementsByName("display")[0].value= result;
    }
-        }
-            
-        </script>
+</script>
         
         
     </body>
